@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+</head>
+<body>
+    <p>Digite a temperatura em Fahrenheit</p>
+    <input type="number" name="id=">
+    <p id= "resultado"></p>
+    <p>Digite a temperatura em Kelvin</p>
+    <input type="number"name=""id="kelvinCaixa">
+    <p id="resultado2"></p>
+    <script>
+        let resultado = document.querySelector('#resultado');
+        let input = document.querySelector('input')
+        input.addEventListener('change',function(){
+            resultado.textContent = 'A temperatura em Celsius é ' + ((Number(input.value) - 32) * 5)/9;
+        })
+         let resultado2
+         
+         = document.querySelector('#resultado2');
+        let input2 = document.querySelector('#kelvinCaixa')
+        input2.addEventListener('change',function(){
+            resultado2.textContent = 'A temperatura em Celsius é ' + (Number(input2.value) - 273.15);
+        })
+    </script>
+</body>
+</html>
